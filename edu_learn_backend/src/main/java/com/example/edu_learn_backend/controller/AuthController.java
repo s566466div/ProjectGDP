@@ -9,7 +9,7 @@ import com.example.edu_learn_backend.service.UserService;
 import com.example.edu_learn_backend.controller.dto.LoginRequest;
 import com.example.edu_learn_backend.controller.dto.AuthResponse;
 
-@CrossOrigin(origins = "http://localhost:3001")
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
