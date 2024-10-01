@@ -1,8 +1,15 @@
-const { defineConfig } = require('cypress');
+const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    // Your e2e configuration
-    baseUrl: 'http://localhost:3000', // Example base URL
+    supportFile: "cypress/support/e2e.js", // Adjust if you have a different path
+    baseUrl: "http://localhost:3000", // Adjust to match your frontend URL
+  },
+
+  component: {
+    devServer: {
+      framework: "react",
+      bundler: "webpack",
+    },
   },
 });
